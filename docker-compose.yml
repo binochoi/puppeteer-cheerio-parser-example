@@ -1,0 +1,9 @@
+version: '3'
+services:
+    node_crawler:
+        build:
+            context: ./
+        volumes:
+            - ./:/project
+        command: node ./index.js
+        working_dir: /project

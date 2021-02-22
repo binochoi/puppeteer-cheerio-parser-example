@@ -19,7 +19,6 @@ const cheerio   = require('cheerio');
           width: 1366,
           height: 768
         });
-        // "https://www.goodchoice.kr/product/search/2" URL에 접속한다. (여기어때 호텔 페이지)
         const DOM = await page.goto(url);
 
         await delay(delayTime);
